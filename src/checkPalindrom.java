@@ -10,6 +10,7 @@ public class checkPalindrom {
         System.out.println(isPalindrome(p3));
         System.out.println(isPalindrome(p4));
     }
+    //Leetcode #9 -> Palindrome Numbers
     public static boolean isPalindrome(int x) {
         String y = Integer.toString(x);
         int i = 0;
