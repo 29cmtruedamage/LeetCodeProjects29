@@ -23,19 +23,23 @@ public class romanNumberToInt {
 
         int result = 0;
 
-        for (int i = s.length() - 1; i > 0; i--) {
-            int current = map.get(s.charAt(i));
-            if (map.get(s.charAt(i - 1)) < current) {
-                current = current - map.get(s.charAt(i - 1));
-                i = i - 1;
+        if (s.length() > 1) {
+            for (int i = s.length() - 1; i > 0; i--) {
+                int current = map.get(s.charAt(i));
+                if (map.get(s.charAt(i - 1)) < current) {
+                    current = current - map.get(s.charAt(i - 1));
+                    i = i - 1;
+                }
+                result = result + current;
             }
-            result = result + current;
-        }
-        if (map.get(s.charAt(0)) < map.get(s.charAt(1))) {
+            if (map.get(s.charAt(0)) < map.get(s.charAt(1))) {
+                return result;
+            } else {
+                result = result + map.get(s.charAt(0));
+            }
             return result;
         } else {
-            result = result + map.get(s.charAt(0));
+            return map.get(s.charAt(0));
         }
-        return result;
     }
 }
