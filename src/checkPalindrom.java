@@ -4,7 +4,6 @@ public class checkPalindrom {
         int p2 = 1234321; //True
         int p3 = -123; //False
         int p4 = 987779; //Flase
-
         System.out.println(isPalindrome(p1));
         System.out.println(isPalindrome(p2));
         System.out.println(isPalindrome(p3));
