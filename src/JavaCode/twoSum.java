@@ -1,3 +1,5 @@
+package JavaCode;
+
 import java.util.HashMap;
 
 public class twoSum {

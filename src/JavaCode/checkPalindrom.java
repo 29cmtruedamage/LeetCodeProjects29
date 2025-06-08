@@ -1,3 +1,5 @@
+package JavaCode;
+
 public class checkPalindrom {
     public static void main(String[] args){
         int p1 = 1001; //True
