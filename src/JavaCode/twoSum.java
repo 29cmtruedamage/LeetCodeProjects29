@@ -3,6 +3,9 @@ package JavaCode;
 import java.util.HashMap;
 
 public class twoSum {
+        public static void main(String[] args){
+            //tests hier
+        }
         public int[] twoSum(int[] nums, int target) {
             HashMap<Integer, Integer> map = new HashMap<>();
             int[] resultArr = new int[2];
